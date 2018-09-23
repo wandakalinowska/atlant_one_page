@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+@font-face {
+font-family: Amsdam;
+src:url(Amsdam.otf);
+}
+//FONTS
+$cursive: 'Amsdam', cursive;
+$sans: 'Montserrat', sans-serif;
+$serif: 'Crimson Text', serif;
+//COLORS
+$white: #fff;
+$grey: #e3e3e3;
+$lightgrey: #b0b0b0;
+$darkgrey: #757575;
+
+
+
+body {
+	max-width: 100vw;
+	background-color: $grey;
+	margin: 0 auto;
+	font-family: $sans;
+}
+
+.container {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.header {
+	background-color: $white;
+	display: flex;
+	justify-content: space-around; 
+	text-transform: uppercase;
+	padding: 10px 0;
+	.logo {
+		img {
+			padding: 5px;
+			float: left;
+		}
+		p {
+			float: left;
+			color: $darkgrey;
+			font-size: 3vmin;
+		}
+	}
+	.nav {
+		ul {
+			list-style-type: none;
+			li {
+				float: left;
+				color: $lightgrey;
+				family-font: $sans;	
+				padding: 5px;
+				font-size: 2vmin;
+			}
+		}
+	}
+	.social {
+		ul {
+			list-style-type: none;
+			li {
+				color: $lightgrey;
+				float: left;
+				padding: 0 4px;
+				.fa-twitter {
+					border-left: solid 1px $lightgrey;
+					border-right: solid 1px $lightgrey;		
+					padding: 0 7px;
+				}
+			}
+		}
+	}
+}
+
+.hero {
+	width: 100%;
+	.carousel {
+		width: 100%;
+		max-height: 90vh;
+	}
+	.carousel-inner {
+		.active {
+			width: 100%;
+    		margin: 0 auto;
+    		.item {
+    			display: flex; 
+    			flex-direction: column;
+    			justify-content: center;
+    			top: 0vh; 
+    			p {
+    				margin: 0 0 40px 0;
+    				font-size: 2vmin;
+    			}
+    			h1 {
+    				text-transform: uppercase;
+    				font-family: $cursive;
+    				margin: 0 16vw;
+    				position: relative;
+    				font-size: 5vmin;
+    				&:before {
+    					content: "";
+					    display: block;
+					    width: 100%;
+					    height: 1vh;
+					    position: absolute;
+					    left: 1vw;
+					    top: -20px;
+					    background: url(../images/line.png) 0 0 no-repeat;
+    				}
+    				&:after {
+    					content: "";
+					    display: block;
+					    width: 100%;
+					    height: 1vh;
+					    position: absolute;
+					    left: 1vw;
+					    bottom: -20px;
+					    background: url(../images/line.png) 0 0 no-repeat;
+    				}
+    			}
+    			button {
+    					margin: 0 auto;
+    					margin-top: 50px;
+    					background-color: transparent;
+    					width: 200px;
+    					border: solid 2px $white;
+    					color: $white;
+
+    			}
+    		}
+    	}
+	}
+}
