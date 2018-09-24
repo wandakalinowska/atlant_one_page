@@ -9,6 +9,35 @@ body {
   margin: 0 auto;
   font-family: "Montserrat", sans-serif; }
 
+section {
+  margin-bottom: 100px; }
+
+h2 {
+  font-family: "Amsdam", cursive;
+  text-transform: uppercase;
+  margin: 0 40%;
+  padding-top: 5vh;
+  font-size: 3vmin;
+  text-align: center;
+  position: relative;
+  color: #fff; }
+  h2:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1vh;
+    position: absolute;
+    left: 1vw;
+    bottom: -20px;
+    background: url(../images/divider.png) 0 0 no-repeat; }
+
+p {
+  margin: 80px;
+  font-size: 2vmin;
+  font-family: "Crimson Text", serif;
+  color: #fff;
+  text-align: center; }
+
 .container {
   max-width: 100%;
   margin: 0 auto; }
@@ -22,9 +51,9 @@ body {
   .header .logo img {
     padding: 5px;
     float: left; }
-  .header .logo p {
+  .header .logo h5 {
     float: left;
-    color: #757575;
+    color: #3e3d3d;
     font-size: 3vmin; }
   .header .nav ul {
     list-style-type: none; }
@@ -58,7 +87,7 @@ body {
       flex-direction: column;
       justify-content: center;
       top: 0vh; }
-      .hero .carousel-inner .active .item p {
+      .hero .carousel-inner .active .item h5 {
         margin: 0 0 40px 0;
         font-size: 2vmin; }
       .hero .carousel-inner .active .item h1 {
@@ -92,5 +121,126 @@ body {
         width: 200px;
         border: solid 2px #fff;
         color: #fff; }
+
+.about {
+  max-width: 1200px;
+  margin: 0 auto;
+  max-height: 100%;
+  padding-top: 5vh; }
+  .about .content {
+    background-color: #fff; }
+    .about .content h2 {
+      color: #3e3d3d; }
+      .about .content h2:after {
+        background: url("../images/line_about.png") 0 0 no-repeat; }
+    .about .content p {
+      margin: 80px 40px;
+      font-size: 2vmin;
+      font-family: "Crimson Text", serif;
+      color: #3e3d3d; }
+    .about .content .btn {
+      margin: 0 auto;
+      width: 100%; }
+      .about .content .btn button {
+        border: solid 2px #3e3d3d;
+        background-color: #fff;
+        color: #3e3d3d;
+        font-family: "Crimson Text", serif;
+        margin: 20px 0 35px 0;
+        font-size: 2vmin;
+        padding: 3px 20px; }
+        .about .content .btn button:hover {
+          background-color: #3e3d3d;
+          color: #fff; }
+  .about .about_icon {
+    margin: 40px 20px 60px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .about .about_icon div {
+      border-right: solid 1px grey;
+      padding: 0 100px;
+      color: #3e3d3d;
+      text-align: center; }
+      .about .about_icon div:last-child {
+        border: none; }
+      .about .about_icon div img {
+        width: 4vw;
+        margin: 0 auto; }
+      .about .about_icon div h3 {
+        text-transform: uppercase;
+        font-size: 2vmin;
+        margin: 15px 0;
+        font-weight: 1000; }
+      .about .about_icon div h1 {
+        font-size: 5vmin; }
+
+.services {
+  background-image: url("../images/background_services.jpg");
+  height: 100%; }
+  .services .container {
+    max-width: 1000px; }
+  .services h2 {
+    margin: 0 42%;
+    color: #fff;
+    font-family: "Crimson Text", serif; }
+  .services .desc {
+    padding: 1% 18%;
+    font-size: 2.2vmin; }
+  .services .services_content {
+    margin: 0 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .services .services_content .content {
+      max-width: 300px;
+      margin-bottom: 50px;
+      border-left: solid 1px #b0b0b0;
+      border-right: solid 1px #b0b0b0;
+      border-bottom: solid 1px #b0b0b0;
+      position: relative; }
+      .services .services_content .content:before {
+        content: '';
+        position: absolute;
+        top: -1px;
+        left: 67%;
+        height: 1px;
+        width: 100px;
+        border-top: solid 1px #b0b0b0; }
+      .services .services_content .content:after {
+        content: '';
+        position: absolute;
+        top: -1px;
+        left: 0;
+        height: 1px;
+        width: 100px;
+        border-top: solid 1px #b0b0b0; }
+      .services .services_content .content img {
+        width: 60px;
+        padding: 12px;
+        position: absolute;
+        background-color: transparent;
+        top: -8%;
+        left: 41%; }
+      .services .services_content .content i {
+        color: #b0b0b0;
+        font-size: 5vmin;
+        padding: 15px;
+        position: absolute;
+        background-color: transparent;
+        top: -8%;
+        left: 41%; }
+      .services .services_content .content h5 {
+        padding-top: 60px;
+        text-align: center;
+        color: #b0b0b0;
+        font-family: "Crimson Text", serif;
+        text-transform: uppercase;
+        font-size: 2.2vmin; }
+      .services .services_content .content p {
+        margin: 40px 60px;
+        font-size: 2vmin;
+        font-family: "Crimson Text", serif;
+        color: #b0b0b0; }
 
 /*# sourceMappingURL=style.css.map */

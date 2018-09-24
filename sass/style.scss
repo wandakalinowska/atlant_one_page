@@ -12,7 +12,7 @@ $serif: 'Crimson Text', serif;
 $white: #fff;
 $grey: #e3e3e3;
 $lightgrey: #b0b0b0;
-$darkgrey: #757575;
+$darkgrey: #3e3d3d;
 
 
 
@@ -21,6 +21,40 @@ body {
 	background-color: $grey;
 	margin: 0 auto;
 	font-family: $sans;
+}
+
+section {
+	margin-bottom: 100px;
+}
+
+h2 {
+	font-family: $cursive;
+	text-transform: uppercase;
+	margin: 0 40%;
+	padding-top: 5vh;
+	font-size: 3vmin;
+	text-align: center;
+	position: relative;
+	color: $white;
+	&:after {
+    	content: "";
+		display: block;
+		width: 100%;
+		height: 1vh;
+		position: absolute;
+		left: 1vw;
+		bottom: -20px;
+		background: url(../images/divider.png) 0 0 no-repeat;
+    }
+}
+
+
+p {
+	margin: 80px;
+	font-size: 2vmin;
+	font-family: $serif;
+	color: $white;
+	text-align: center;
 }
 
 .container {
@@ -39,7 +73,7 @@ body {
 			padding: 5px;
 			float: left;
 		}
-		p {
+		h5 {
 			float: left;
 			color: $darkgrey;
 			font-size: 3vmin;
@@ -89,7 +123,7 @@ body {
     			flex-direction: column;
     			justify-content: center;
     			top: 0vh; 
-    			p {
+    			h5 {
     				margin: 0 0 40px 0;
     				font-size: 2vmin;
     			}
@@ -131,5 +165,156 @@ body {
     			}
     		}
     	}
+	}
+}
+
+.about {
+	max-width: 1200px;
+	margin: 0 auto;
+	max-height: 100%;
+	padding-top: 5vh;
+	.content {
+		background-color: $white;
+		h2 {
+			color: $darkgrey;
+			&:after {
+				background: url('../images/line_about.png') 0 0 no-repeat;
+			}
+		}
+		p {
+			margin: 80px 40px;
+			font-size: 2vmin;
+			font-family: $serif;
+			color: $darkgrey;
+		}
+		.btn {
+			margin: 0 auto;
+			width: 100%;
+			button {
+				border: solid 2px $darkgrey;
+				background-color: $white;
+				color: $darkgrey;
+				font-family: $serif;
+				margin: 20px 0 35px 0;
+				font-size: 2vmin;
+				padding: 3px 20px;
+				&:hover {
+					background-color: $darkgrey;
+					color: $white;
+				}
+			}
+		}
+	}
+	.about_icon {
+		margin: 40px 20px 60px 20px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		div {
+			border-right: solid 1px grey;
+			padding: 0 100px;
+			color: $darkgrey;
+			text-align: center;
+			&:last-child {
+				border: none;
+			}
+			img {
+				width: 4vw;
+				margin: 0 auto;
+			}
+			h3 {
+				text-transform: uppercase;
+				font-size: 2vmin;
+				margin: 15px 0;
+				font-weight: 1000;
+				
+			}
+			h1 {
+				font-size: 5vmin;
+			}
+		}
+	}
+}
+
+.services {
+	background-image: url("../images/background_services.jpg");
+	height: 100%;
+	.container {
+		max-width: 1000px;
+
+	}
+	h2 {
+		margin: 0 42%;
+		color: $white;
+		font-family: $serif;
+	}
+	.desc {
+		padding: 1% 18%;
+		font-size: 2.2vmin;
+	}
+	.services_content {
+		margin: 0 5vw;
+		display: flex; 
+		flex-wrap: wrap;
+		justify-content: space-around;
+		.content {
+			max-width: 300px;
+			margin-bottom: 50px;
+			border-left: solid 1px $lightgrey;
+			border-right: solid 1px $lightgrey;
+			border-bottom: solid 1px $lightgrey;
+			position: relative;
+			&:before{
+				content: '';
+				position: absolute;
+				top: -1px;
+				left: 67%;
+				height: 1px;
+				width: 100px;
+				border-top: solid 1px $lightgrey;
+			}
+			&:after{
+				content: '';
+				position: absolute;
+				top: -1px;
+				left: 0;
+				height: 1px;
+				width: 100px;
+				border-top: solid 1px $lightgrey;
+			}
+			
+			img {
+				width: 60px;
+				padding: 12px;
+				position: absolute;
+				background-color: transparent;
+				top: -8%;
+				left: 41%;
+			}
+			i {
+				color: $lightgrey;
+				font-size: 5vmin;
+				padding: 15px;
+				position: absolute;
+				background-color: transparent;
+				top: -8%;
+				left: 41%;
+			}
+			h5 {
+				padding-top: 60px;
+				text-align: center;
+				color: $lightgrey;
+				font-family: $serif;
+				text-transform: uppercase;
+				font-size: 2.2vmin;
+			}
+			p {
+				margin: 40px 60px;
+				font-size: 2vmin;
+				font-family: $serif;
+				color: $lightgrey;
+
+			}
+		}
 	}
 }
