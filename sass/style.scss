@@ -43,28 +43,24 @@ section {
 h2 {
 	font-family: $cursive;
 	text-transform: uppercase;
-	margin: 0 40%;
-	padding-top: 5vh;
-	font-size: 4vmin;
+	margin: 0 auto;
+	padding-top: 2em;
+	font-size: 1.6em;
 	text-align: center;
 	position: relative;
 	color: $darkgrey;
-	&:after {
-    	content: "";
-		display: block;
-		width: 100%;
-		height: 1vh;
-		position: absolute;
-		left: 1.3vw;
-		bottom: -20px;
-		background: url('../images/line_about.png') 0 0 no-repeat;
-    }
+}
+.underline {
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 12em;
+	height: 20px;
+	background: url('../images/line_about.png') 0 0 no-repeat;
 }
 
-
 p {
-	margin: 80px;
-	font-size: 2vmin;
+	margin: 50px;
+	font-size: 1em;
 	font-family: $serif;
 	color: $darkgrey;
 	text-align: center;
@@ -78,6 +74,9 @@ p {
 .container {
 	max-width: 100%;
 	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .header {
@@ -173,13 +172,12 @@ p {
     				}
     			}
     			button {
-    					margin: 0 auto;
-    					margin-top: 50px;
-    					background-color: transparent;
-    					width: 200px;
-    					border: solid 2px $white;
-    					color: $white;
-
+    				margin: 0 auto;
+    				margin-top: 50px;
+    				background-color: transparent;
+    				width: 200px;
+    				border: solid 2px $white;
+    				color: $white;
     			}
     		}
     	}
@@ -258,9 +256,9 @@ p {
 	h2 {
 		margin: 0 42%;
 		color: $white;
-		&:after {
-			background: url('../images/divider.png') 0 0 no-repeat;
-		}
+	}
+	.underline {
+		background: url('../images/divider.png') 0 0 no-repeat;
 	}
 	p {
 		color: $white;
@@ -467,15 +465,15 @@ p {
 }
 	
 .our_team {
-	margin-top: 5vh;
+	margin-top: 10vh;
 	background-image: url("../images/background_team.jpg");
 	.container_team{
 		margin: 0 auto;
 		max-width: 1000px;
-		height: 95vh;
+		height: 90vh;
 		.team_content {
 			margin: 0 auto;
-			width: 100%;
+			width: 90%;
 			display: flex;
 			justify-content: space-between;
 			.team_photo {
@@ -537,6 +535,32 @@ p {
 					    }
 					}
   				}
+			}
+		}
+	}
+}
+
+.portfolio {
+	.my-buttons {
+	  	margin: 0 auto;
+	  	text-transform: uppercase;
+	  	width: 90%;
+	  	display: flex;
+	  	justify-content: center;
+	  	margin-bottom: 50px;
+	}
+	.row { 
+	    width: 100%;
+	    margin: 0 auto;
+		display: flex;
+		justify-content: flex-start;
+		background-color: $darkgrey;
+		.content {
+			width: 25%;
+			img {
+				width: 100%;
+				height: 400px;
+				cursor: pointer;
 			}
 		}
 	}
